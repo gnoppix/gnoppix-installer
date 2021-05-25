@@ -1,0 +1,787 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Croatian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@computer.org>, 2001, 2004.
+#   Free Software Foundation, Inc., 2000,2004
+#   Josip Rodin, 2008
+#   Krunoslav Gernhard, 2004
+#   Vladimir Vuksan <vuksan@veus.hr>, 2000.
+#   Vlatko Kosturjak, 2001
+#   Tomislav Krznar <tomislav.krznar@gmail.com>, 2012, 2013, 2014, 2015.
+#   Valentin Vidic <Valentin.Vidic@CARNet.hr>, 2017
+#   Milo Ivir <mail@milotype.de>, 2019.
+#   gogogogi <trebelnik2@gmail.com>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Debian-installer 1st-stage master file HR\n"
+"Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
+"POT-Creation-Date: 2019-11-02 22:41+0100\n"
+"PO-Revision-Date: 2020-04-02 18:02+0000\n"
+"Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
+"Language-Team: Croatian <lokalizacija@linux.hr>\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. MUST be kept below 55 characters/columns
+#. :sl1:
+#: ../apt-setup-udeb.templates:1001
+msgid "Configure the package manager"
+msgstr "Podešavanje upravitelja paketima"
+
+#. Type: text
+#. Description
+#. Translators, "apt" is the program name
+#. so please do NOT translate it
+#. :sl1:
+#: ../apt-setup-udeb.templates:2001
+msgid "Configuring apt"
+msgstr "Podešavanje APT-a"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../apt-setup-udeb.templates:3001
+msgid "Running ${SCRIPT}..."
+msgstr "Pokrećem ${SCRIPT}..."
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../apt-setup-udeb.templates:4001
+msgid "Scanning local repositories..."
+msgstr "Pretraživanje lokalnih repozitorija..."
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../apt-setup-udeb.templates:5001
+msgid "Scanning the security updates repository..."
+msgstr "Pretraživanje repozitorija sigurnosnih nadopuna..."
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../apt-setup-udeb.templates:6001
+msgid "Scanning the release updates repository..."
+msgstr "Pretraživanje repozitorija nadopuna izdanja..."
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../apt-setup-udeb.templates:7001
+msgid "Scanning the backports repository..."
+msgstr "Pretraživanje repozitorija podržanih nadopuna..."
+
+#. Type: select
+#. Choices
+#. :sl2:
+#. These are choices of actions so this is, at least in English,
+#. an infinitive form
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+msgid "Retry"
+msgstr "Pokušaj ponovno"
+
+#. Type: select
+#. Choices
+#. :sl2:
+#. These are choices of actions so this is, at least in English,
+#. an infinitive form
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+msgid "Ignore"
+msgstr "Zanemari"
+
+#. Type: select
+#. Description
+#: ../apt-setup-udeb.templates:8002
+msgid "Downloading local repository key failed:"
+msgstr "Preuzimanje ključa lokalnog repozitorija nije uspjelo:"
+
+#. Type: select
+#. Description
+#. You should end this with a colon. A non-translatable variable
+#. follows with the mirror URL
+#. :sl2:
+#: ../apt-setup-udeb.templates:8002
+msgid ""
+"The installer failed to download the public key used to sign the local "
+"repository at ${MIRROR}:"
+msgstr ""
+"Instalacijski program nije uspio preuzeti javni ključ s kojim se potpisuje "
+"lokalni repozitorij na ${MIRROR}:"
+
+#. Type: select
+#. Description
+#: ../apt-setup-udeb.templates:8002
+msgid ""
+"This may be a problem with your network, or with the server hosting this "
+"key. You can choose to retry the download, or ignore the problem and "
+"continue without all the packages from this repository."
+msgstr ""
+"Ovo može biti problem vaše mreže ili problem poslužitelja na kojem se nalazi "
+"ključ. Možete pokušati ponoviti preuzimanje ili zanemariti problem te "
+"nastavi bez svih paketa sadržanih u ovom repozitoriju."
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../apt-setup-udeb.templates:10001
+msgid "Cannot access repository"
+msgstr "Nemoguć pristup repozitoriju"
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../apt-setup-udeb.templates:10001
+msgid ""
+"The repository on ${HOST} couldn't be accessed, so its updates will not be "
+"made available to you at this time. You should investigate this later."
+msgstr ""
+"Repozitoriju na ${HOST} nije bilo moguće pristupiti, stoga te nadopune "
+"trenutačno nisu dostupne. Ovo trebate proučiti kasnije."
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../apt-setup-udeb.templates:10001
+msgid ""
+"Commented out entries for ${HOST} have been added to the /etc/apt/sources."
+"list file."
+msgstr "Upisi komentara za ${HOST} su dodani u /etc/apt/sources.list datoteku."
+
+#. Type: multiselect
+#. Choices
+#. SEC_HOST is a host name (e.g. security.debian.org)
+#. Translators: the *entire* string should be under 55 columns
+#. including host name. In short, KEEP THIS SHORT and, yes, that's tricky
+#. :sl1:
+#: ../apt-setup-udeb.templates:11001
+msgid "security updates (from ${SEC_HOST})"
+msgstr "sigurnosne nadopune (sa ${SEC_HOST})"
+
+#. Type: multiselect
+#. Choices
+#. SEC_HOST is a host name (e.g. security.debian.org)
+#. Translators: the *entire* string should be under 55 columns
+#. including host name. In short, KEEP THIS SHORT and, yes, that's tricky
+#. :sl1:
+#: ../apt-setup-udeb.templates:11001
+msgid "release updates"
+msgstr "nadopune izdanja"
+
+#. Type: multiselect
+#. Choices
+#. SEC_HOST is a host name (e.g. security.debian.org)
+#. Translators: the *entire* string should be under 55 columns
+#. including host name. In short, KEEP THIS SHORT and, yes, that's tricky
+#. :sl1:
+#: ../apt-setup-udeb.templates:11001
+msgid "backported software"
+msgstr "podržani softver"
+
+#. Type: multiselect
+#. Description
+#. :sl1:
+#: ../apt-setup-udeb.templates:11002
+msgid "Services to use:"
+msgstr "Usluge za korištenje:"
+
+#. Type: multiselect
+#. Description
+#. :sl1:
+#: ../apt-setup-udeb.templates:11002
+msgid ""
+"Debian has two services that provide updates to releases: security and "
+"release updates."
+msgstr ""
+"Debian ima dvije usluge koje pružaju nadopune za izdanja: sigurnosne "
+"nadopune i nadopune izdanja."
+
+#. Type: multiselect
+#. Description
+#. :sl1:
+#: ../apt-setup-udeb.templates:11002
+msgid ""
+"Security updates help to keep your system secured against attacks. Enabling "
+"this service is strongly recommended."
+msgstr ""
+"Sigurnosne nadopune vam pomažu u očuvanju vašeg sustava sigurnim od napada. "
+"Omogućavanje ove usluge je jako preporučljivo."
+
+#. Type: multiselect
+#. Description
+#. :sl1:
+#: ../apt-setup-udeb.templates:11002
+msgid ""
+"Release updates provide more current versions for software that changes "
+"relatively frequently and where not having the latest version could reduce "
+"the usability of the software. It also provides regression fixes. This "
+"service is only available for stable and oldstable releases."
+msgstr ""
+"Nadopune izdanja pružaju vam novije inačice softvera koji se redovito "
+"mijenja i za koji neimanje najnovije inačice može umanjiti upotrebljivost "
+"softvera. Isto tako omogućuje popravke nestabilnosti. Usluga je samo "
+"dostupna za stabilna i starija stabilna izdanja."
+
+#. Type: multiselect
+#. Description
+#. :sl1:
+#: ../apt-setup-udeb.templates:11002
+msgid ""
+"Backported software are adapted from the development version to work with "
+"this release. Although this software has not gone through such complete "
+"testing as that contained in the release, it includes newer versions of some "
+"applications which may provide useful features. Enabling backports here does "
+"not cause any of them to be installed by default; it only allows you to "
+"manually select backports to use."
+msgstr ""
+"Podržani softver je prilagođen iz razvojne inačice kako bi radio s ovim "
+"izdanjem. Iako ovaj softver nije prošao cjelovito testiranje kao onaj u ovom "
+"izdanju, uključuje novije inačice određenih aplikacija koje mogu pružati "
+"korisne značajke. Omogućavanje podržanog softvera ne uzrokuje automatsku "
+"instalaciju po zadanome, omogućuje vam samo ručni odabir instalacije "
+"podržanog softvera."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../apt-setup-udeb.templates:12001
+msgid "Enable source repositories in APT?"
+msgstr "Omogući repozitorije izvora u APT-u?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../apt-setup-udeb.templates:12001
+msgid ""
+"By default source repositories are listed in /etc/apt/sources.list (with "
+"appropriate \"deb-src\" lines) so that \"apt-get source\" works. However, if "
+"you don't need this feature, you can disable those entries and save some "
+"bandwidth during \"apt-get update\" operations."
+msgstr ""
+"Po zadanome repozitoriji izvora su prikazani u /etc/apt/sources.list (s "
+"odgovarajućim \"deb-src\" redcima) tako da preuzimanje izvornog kôda \"apt-"
+"get source\" radi. Ipak, ako vam ova značajka nije potrebna, možete "
+"onemogućite te upise i uštedjeti nešto mrežnog prometa tijekom radnje \"apt-"
+"get update\" preuzimanja nadopuna."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:1001
+msgid "Scanning the installation media..."
+msgstr "Pretraživanje instalacijskog medija..."
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../apt-cdrom-setup.templates:2001
+msgid "apt configuration problem"
+msgstr "apt problem podešavanja"
+
+#. Type: error
+#. Description
+#. :sl2:
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:2001 ../apt-cdrom-setup.templates:6001
+msgid ""
+"An attempt to configure apt to install additional packages from the media "
+"failed."
+msgstr ""
+"Pokušaj APT podešavanja za instalaciju dodatnih paketa s medija nije uspio."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
+#: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
+msgid "Scan extra installation media?"
+msgstr "Pretraži dodatni instalacijski medij?"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:3001
+msgid "Scanning your installation media finds the label:"
+msgstr "Pretraga vašeg instalacijskog medija je pronašla oznaku:"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:3001
+msgid ""
+"You now have the option of scanning additional media for use by the package "
+"manager (apt). Normally these should be from the same set as the one you "
+"booted from. If you do not have any additional media, this step can just be "
+"skipped."
+msgstr ""
+"Sada imate mogućnost pretraživanja dodatnih medija koji će koristiti "
+"upravitelj paketa (apt). Uobičajeno ti dodatni mediji bi trebali biti iz "
+"istog skupa medija kao i glavni instalacijski medij. Ako nemate dodatnih "
+"medija, jednostavno preskočite ovaj korak."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
+msgid "If you wish to scan more media, please insert another one now."
+msgstr "Ako želite pretražiti dodatni medij, umetnite ga odmah."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:4001
+msgid "The image with the following label has been scanned:"
+msgstr "Slika sa sljedećom oznakom je pretražena:"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:5001
+msgid "The image with the following label has already been scanned:"
+msgstr "Slika sa sljedećom oznakom je već pretražena:"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:5001
+msgid "Please replace it now, if you wish to scan another."
+msgstr "Zamijenite ga odmah, ako želite pretražiti drugi medij."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:6001
+msgid "Please check that the media has been inserted correctly."
+msgstr "Provjerite je li medij umetnut ispravno."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:7001
+msgid "Media change"
+msgstr "Promjena medija"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:7001
+msgid "Please insert the media labeled '${LABEL}' and press enter."
+msgstr "Umetnite medij oznake '${LABEL}' i pritisnite enter."
+
+#. Type: text
+#. Description
+#. :sl1:
+#. finish-install progress bar item
+#: ../apt-cdrom-setup.templates:8001
+msgid "Disabling netinst CD in sources.list..."
+msgstr "Onemogućavanje CD-a mrežne instalacije u sources.list datoteci..."
+
+#. Type: text
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
+msgid ""
+"If you are installing from a netinst CD image and choose not to use a "
+"mirror, you will end up with only a very minimal base system."
+msgstr ""
+"Ako instalirate s CD slike mrežne instalacije i odaberete nekorištenje "
+"zrcalnog poslužitelja, završit ćete samo s minimalnim osnovnim sustavom."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:10001
+msgid ""
+"You are installing from a netinst CD image, which by itself only allows "
+"installation of a very minimal base system. Use a mirror to install a more "
+"complete system."
+msgstr ""
+"Instalirate s CD slike mrežne instalacije, koja sama po sebi omogućuje "
+"instalaciju samo minimalnog osnovnog sustava. Koristite zrcalni poslužitelj "
+"za instalaciju cjelokupnog sustava."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:11001
+msgid ""
+"You are installing from an image which contains a limited selection of "
+"packages."
+msgstr "Instalirate sa slike koja sadrži ograničeni izbor paketa."
+
+#. Type: text
+#. Description
+#. :sl1:
+#. The value of %i can be 2 or 3
+#: ../apt-cdrom-setup.templates:12001
+#, no-c-format
+msgid ""
+"You have scanned %i images. Even though these contain a fair selection of "
+"packages, some may be missing (notably some packages needed to support "
+"languages other than English)."
+msgstr ""
+"Pretražili ste %i slika. Iako one sadrže značajnu količinu paketa, pojedini "
+"paketi možda nedostaju (posebice pojedini paketi su potrebni za podršku "
+"drugih jezika osim engleskog)."
+
+#. Type: text
+#. Description
+#. :sl1:
+#. The value of %i can be from 4 to 8
+#: ../apt-cdrom-setup.templates:13001
+#, no-c-format
+msgid ""
+"You have scanned %i images. Even though these contain a large selection of "
+"packages, some may be missing."
+msgstr ""
+"Pretražili ste %i slika. Iako one sadrže značajnu količinu paketa, pojedini "
+"paketi možda nedostaju."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:14001
+msgid ""
+"Note that using a mirror can result in a large amount of data being "
+"downloaded during the next step of the installation."
+msgstr ""
+"Uzmite u obzir da korištenje zrcalnog poslužitelja može uzrokovati "
+"preuzimanje velike količine podataka za vrijeme sljedećeg koraka instalacije."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:15001
+msgid ""
+"You are installing from a DVD image. Even though it contains a large "
+"selection of packages, some may be missing."
+msgstr ""
+"Instalirate s DVD slike. Iako sadrži značajnu količinu paketa, pojedini "
+"možda nedostaju."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:16001
+msgid ""
+"Unless you don't have a good Internet connection, use of a mirror is "
+"recommended, especially if you plan to install a graphical desktop "
+"environment."
+msgstr ""
+"Osim ako nemate dobar pristup Internetu, korištenje zrcalnog poslužitelja se "
+"preporučuje, pogotovo ako planirate instalirati grafičko radno okružje."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:17001
+msgid ""
+"If you have a reasonably good Internet connection, use of a mirror is "
+"suggested if you plan to install a graphical desktop environment."
+msgstr ""
+"Ako imate razmjerno dobar pristup Internetu, korištenje zrcalnog "
+"poslužitelja se preporučuje ako planirate instalirati grafičko radno okružje."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:1001
+msgid "Scanning the mirror..."
+msgstr "Pretraživanje zrcalnog poslužitelja..."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:2001
+msgid "Use non-free software?"
+msgstr "Koristi vlasnički softver?"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:2001
+msgid ""
+"Some non-free software has been made to work with Debian. Though this "
+"software is not at all a part of Debian, standard Debian tools can be used "
+"to install it. This software has varying licenses which may prevent you from "
+"using, modifying, or sharing it."
+msgstr ""
+"Pojedini vlasnički softver je načinjen kako bi radio s Debianom. Iako taj "
+"softver ni na koji način nije dio Debiana, možete ga instalirati uobičajenim "
+"Debianovim alatima. Taj softver ima različite licence koje vas sprječavaju u "
+"korištenju, prilagođavanju ili dijeljenju tog softvera."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates-ubuntu:1001
+msgid "Please choose whether you want to have it available anyway."
+msgstr "Odaberite hoćete li ga ipak imati omogućenim."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:3001
+msgid "Use contrib software?"
+msgstr "Koristi doprineseni softver?"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:3001
+msgid ""
+"Some additional software has been made to work with Debian. Though this "
+"software is free, it depends on non-free software for its operation. This "
+"software is not a part of Debian, but standard Debian tools can be used to "
+"install it."
+msgstr ""
+"Pojedini dodatni softver je načinjen kako bi radio s Debianom. Iako je taj "
+"softver slobodan, njegov rad ovisi o vlasničkom softveru. Taj softver nije "
+"dio Debiana, ali ga možete instalirati uobičajenim Debianovim alatima."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates:3001 ../apt-mirror-setup.templates-ubuntu:2001
+#: ../apt-mirror-setup.templates-ubuntu:3001
+#: ../apt-mirror-setup.templates-ubuntu:4001
+#: ../apt-mirror-setup.templates-ubuntu:5001
+msgid ""
+"Please choose whether you want this software to be made available to you."
+msgstr "Odaberite želite li imati ovaj softver dostupnim."
+
+#. Type: select
+#. Choices
+#. :sl2:
+#. These are choices of actions so this is, at least in English,
+#. an infinitive form
+#: ../apt-mirror-setup.templates:4001
+msgid "Change mirror"
+msgstr "Promijeni zrcalni poslužitelj"
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../apt-mirror-setup.templates:4002
+msgid "Downloading a file failed:"
+msgstr "Preuzimanje datoteke nije uspjelo:"
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../apt-mirror-setup.templates:4002
+msgid ""
+"The installer failed to access the mirror. This may be a problem with your "
+"network, or with the mirror. You can choose to retry the download, select a "
+"different mirror, or ignore the problem and continue without all the "
+"packages from this mirror."
+msgstr ""
+"Instalacijski program nije uspio pristupiti zrcalnom poslužitelju. Možda je "
+"problem u vašoj mreži ili s tim zrcalnim poslužiteljem. Možete pokušati "
+"ponovno preuzimanje, odabrati neki drugi zrcalni poslužitelj, ili zanemariti "
+"problem te nastaviti bez svih paketa s tog zrcalnog poslužitelja."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:5001
+msgid "Use a network mirror?"
+msgstr "Koristi mrežni zrcalni poslužitelj?"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:5001
+msgid ""
+"A network mirror can be used to supplement the software that is included on "
+"the installation media. This may also make newer versions of software "
+"available."
+msgstr ""
+"Mrežni zrcalni poslužitelj se može koristiti za nadopunu softvera koji je "
+"uključen u instalacijski medij. Na taj način dostupne su i novije inačice "
+"softvera."
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../apt-mirror-setup.templates:6001
+msgid "Continue without a network mirror?"
+msgstr "Nastavi bez mrežnog zrcalnog poslužitelja?"
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../apt-mirror-setup.templates:6001
+msgid "No network mirror was selected."
+msgstr "Mrežni zrcalni poslužitelj nije odabran."
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:1001
+msgid "Use restricted software?"
+msgstr "Koristi ograničeni softver?"
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:1001
+msgid ""
+"Some non-free software is available in packaged form. Though this software "
+"is not a part of the main distribution, standard package management tools "
+"can be used to install it. This software has varying licenses which may "
+"prevent you from using, modifying, or sharing it."
+msgstr ""
+"Pojedini vlasnički softver je dostupan u obliku paketa. Iako taj softver "
+"nije dio glavne distribucije, može se instalirati uobičajenim alatima za "
+"upravljanje paketima. Taj softver ima različite licence koje vas mogu "
+"spriječiti u korištenju, prilagođavanju ili dijeljenju tog softvera."
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:2001
+msgid "Use software from the \"universe\" component?"
+msgstr "Koristi softver iz \"universe\" repozitorija?"
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:2001
+msgid ""
+"Some additional software is available in packaged form. This software is "
+"free and, though it is not a part of the main distribution, standard package "
+"management tools can be used to install it."
+msgstr ""
+"Pojedini dodatni softver je dostupan u obliku paketa. Taj softver je "
+"slobodan iako nije dio glavne distribucije, može se instalirati uobičajenim "
+"alatima za upravljanje paketima."
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:3001
+msgid "Use software from the \"multiverse\" component?"
+msgstr "Koristi softver iz \"multiverse\" repozitorija?"
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:3001
+msgid ""
+"Some non-free software is available in packaged form. Though this software "
+"is not a part of the main distribution, standard package management tools "
+"can be used to install it. This software has varying licenses and (in some "
+"cases) patent restrictions which may prevent you from using, modifying, or "
+"sharing it."
+msgstr ""
+"Pojedini vlasnički softver je dostupan u obliku paketa. Iako taj softver "
+"nije dio glavne distribucije, može se instalirati uobičajenim alatima za "
+"upravljanje paketima. Taj softver ima različite licence i (u nekim "
+"slučajevima) ograničenja patentima koji vas mogu spriječiti u korištenju, "
+"prilagođavanju ili dijeljenju tog softvera."
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:4001
+msgid "Use software from the \"partner\" repository?"
+msgstr "Koristi softver iz \"partner\" repozitorija?"
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:4001
+msgid ""
+"Some additional software is available from Canonical's \"partner\" "
+"repository. This software is not part of Ubuntu, but is offered by Canonical "
+"and the respective vendors as a service to Ubuntu users."
+msgstr ""
+"Pojedini dodatni softver je dostupan iz Canonicalovog \"partner\" "
+"repozitorija. Ovaj softver nije dio Ubuntua, ali ga Canonical i pojedini "
+"izdavači nude kao uslugu korisnicima Ubuntua."
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:5001
+msgid "Use backported software?"
+msgstr "Koristi 'backported' softver?"
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:5001
+msgid ""
+"Some software has been backported from the development tree to work with "
+"this release. Although this software has not gone through such complete "
+"testing as that contained in the release, it includes newer versions of some "
+"applications which may provide useful features."
+msgstr ""
+"Pojedini softver je prebačen iz razvojnog stabla kako bi radio s ovim "
+"izdanjem. Iako ovaj softver nije prošao kroz potpuno testiranje kao softver "
+"sadržan u ovom izdanju, uključuje novije inačice nekih aplikacija koje mogu "
+"pružiti korisne značajke."

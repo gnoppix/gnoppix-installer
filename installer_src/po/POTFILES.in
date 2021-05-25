@@ -1,0 +1,6 @@
+# files added by intltool-prepare
+data/ubiquity.desktop.in
+data/ubiquity-kdeui.desktop.in
+data/oem-config-prepare-kde.desktop.in
+data/oem-config-prepare-gtk.desktop.in
+data/com.ubuntu.ubiquity.policy.in

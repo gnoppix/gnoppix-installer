@@ -1,0 +1,13 @@
+Source: partman-swapfile
+Section: debian-installer
+Priority: standard
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Build-Depends: debhelper (>= 9), dh-di, po-debconf (>= 0.5.0)
+Vcs-Browser: https://salsa.debian.org/installer-team/partman-swapfile
+Vcs-Git: https://salsa.debian.org/installer-team/partman-swapfile.git
+
+Package: partman-swapfile
+Package-Type: udeb
+Architecture: all
+Depends: ${misc:Depends}, partman-base (>= 124)
+Description: Add to partman support for swapfile
